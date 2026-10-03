@@ -403,3 +403,43 @@ ORDER BY revenue_band;
 -- ============================================================
 -- END OF DAY 2 BUSINESS ANALYSIS
 -- ============================================================
+
+SELECT ROUND(SUM(Revenue), 2) AS total_revenue
+FROM retail_clean; -- to calculate the total revenue 
+
+select count( distinct Invoice) as total_orders
+from retail_clean; -- to calculate the total order 
+
+select count( DISTINCT CustomerID) as total_customers
+from retail_clean; -- to calculate the total customers
+
+SELECT COUNT(DISTINCT StockCode) AS total_products
+FROM retail_clean; -- to get total products
+
+-- to remove customers with customerid blank string
+SELECT
+    COUNT(*) AS rows_with_blank_customer
+FROM retail_clean
+WHERE TRIM(CustomerID) = '';
+
+SELECT
+    ROUND(SUM(Revenue), 2) AS revenue
+FROM retail_clean
+WHERE TRIM(CustomerID) = ''; -- removed while creating retain clean table by adding -> WHERE CustomerID IS NOT NULL AND TRIM(CustomerID) <> ''
+
+-- First transaction date
+SELECT MIN(InvoiceDate) AS first_transaction_date
+FROM retail_clean;
+
+-- Last transaction date
+SELECT MAX(InvoiceDate) AS last_transaction_date
+FROM retail_clean;
+
+-- to check blank customerid again in retail_clean every row should return zero here
+SELECT
+    SUM(CustomerID IS NULL) AS null_customers,
+    SUM(TRIM(CustomerID) = '') AS blank_customers,
+    SUM(Invoice LIKE 'C%') AS cancellations,
+    SUM(Quantity <= 0) AS invalid_quantities,
+    SUM(Price <= 0) AS invalid_prices
+FROM retail_clean;
