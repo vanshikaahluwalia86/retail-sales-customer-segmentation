@@ -1,0 +1,44 @@
+Analysis reference date: 2011-12-09 12:50:00
+Total customers: 5878
+
+Champions: 
+- customers: 1342
+- % customers: 22.83
+- revenue: 11945845.10
+- % revenue: 68.75
+
+Loyal:
+- customers: 1008
+- % customers: 17.15
+- revenue: 2889182.62
+- % revenue: 16.63
+
+At Risk:
+- customers: 702
+- % customers: 11.94
+- revenue: 884090.32
+- % revenue: 5.09
+
+Lost:
+- customers: 1366
+- % customers: 23.24
+- revenue: 354124.49
+- % revenue: 2.04
+
+Other:
+- customers: 1460
+- % customers: 24.84
+- revenue: 1301565.62
+- % revenue: 7.49
+
+Average recency by segment - 
+Average frequency by segment - 
+Average monetary value by segment - 
+table below : 
+| Segment   | Average Recency | Average Frequency | Average Monetary |
+| --------- | --------------: | ----------------: | ---------------: |
+| Champions |        **19.3** |         **16.63** |      **8901.52** |
+| Loyal     |       **150.0** |          **7.89** |      **2866.25** |
+| At Risk   |       **392.2** |          **2.71** |      **1259.39** |
+| Lost      |       **462.8** |          **1.24** |       **259.24** |
+| Other     |        **65.9** |          **2.12** |       **891.48** |

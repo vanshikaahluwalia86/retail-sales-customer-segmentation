@@ -1,0 +1,35 @@
+Cohort results:
+- Month 0 retention: 100% for every cohort because Month 0 is the acquisition month.
+- Month 1 retention examples: December 2009 cohort had 337 active customers out of 955, giving 35.29% retention.
+- Month 3 retention examples: December 2009 cohort had 406 active customers out of 955, giving 42.51% retention.
+
+Python EDA:
+- Number of rows: 779,408
+- Number of columns: 9
+- Missing values: 0
+- Duplicate rows: 0
+- Revenue median: 3.00
+- Revenue mean: 26.27
+
+BUSINESS INSIGHTS
+Transaction data:
+The cleaned dataset contains transaction-level retail records with customer, date, product, quantity, price, and revenue information.
+
+Revenue distribution:
+Transaction-level revenue is highly right-skewed. Most transactions generate relatively low revenue, while a small number have substantially higher values, 
+creating a long right tail. This indicates that a relatively small number of high-value transactions contribute significantly to revenue.
+
+Revenue over time:
+Monthly revenue shows substantial variation across the dataset period, with pronounced peaks in late 2010 and late 2011. 
+Revenue rises strongly around September–November. December 2011 should be interpreted cautiously because the dataset ends on December 9, 
+making it a partial month.
+
+Top customers:
+Customer 18102 is the highest revenue-generating customer, followed by 14646 and 14156. 
+Other high-value customers include 14911, 17450, 13694, 17511, 16446, 16684, and 12415. 
+This shows that revenue is concentrated among a relatively small group of high-value customers.
+
+Patterns and business opportunities:
+The main patterns are strong right-skewness in transaction revenue, substantial monthly revenue variation, and concentration of revenue among high-value customers. 
+These customers are important targets for retention and personalized marketing. 
+High-value transactions should also be investigated to determine whether they are driven by bulk purchases, expensive products, or unusual purchasing behaviour.

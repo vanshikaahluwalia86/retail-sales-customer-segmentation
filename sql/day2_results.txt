@@ -1,0 +1,13 @@
+Total revenue - 20476264.33
+Total orders - 40077 (distinct)
+Total customers - 5879
+Total products - 4744
+Average order value - 510.92 (calculated from total revenue/ total orders)
+Repeat purchase rate - 72.39 
+Repeated customers - 4256 
+Top revenue-generating country - United Kingdom
+Top revenue-generating product - M (description manual)
+Highest-revenue customer - 18102 customerid
+First transaction date - 2009-12-01 07:45:00
+Last transaction date - 2011-12-09 12:50:00
+
