@@ -2,6 +2,22 @@
 data/raw/*.xlsx
 data/raw/*.csv
 
+# Cleaned datasets - generated locally, do NOT upload
+data/cleaned/*.csv
+
+# Python
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+
+# macOS
+.DS_Store
+
+# Environment
+.env# Raw dataset - do NOT upload to GitHub
+data/raw/*.xlsx
+data/raw/*.csv
+
 # Python
 __pycache__/
 .ipynb_checkpoints/
